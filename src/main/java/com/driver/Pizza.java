@@ -67,10 +67,10 @@ public class Pizza {
             if(bag){
                 this.bill +="Paperbag Added: 20"+"\n";
             }
-            this.bill+="Total Price: "+this.price+"\n";
+            this.bill+="Total Price: "+this.price;
             isBill = true;
             return this.bill;
         }
-       return " ";
+       return "";
     }
 }
