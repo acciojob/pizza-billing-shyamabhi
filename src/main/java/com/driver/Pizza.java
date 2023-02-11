@@ -52,7 +52,6 @@ public class Pizza {
             this.price+=20;
             bag = true;
         }
-
     }
 
     public String getBill(){
@@ -67,7 +66,7 @@ public class Pizza {
             if(bag){
                 this.bill +="Paperbag Added: 20"+"\n";
             }
-            this.bill+="Total Price: "+this.price;
+            this.bill += "Total Price: "+this.price;
             this.isBill = true;
             return this.bill;
         }
