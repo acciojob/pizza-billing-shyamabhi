@@ -8,6 +8,63 @@ public class Pizza {
 
     private int toppings;
     boolean isExtracheese;
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public Boolean getVeg() {
+        return isVeg;
+    }
+
+    public void setVeg(Boolean veg) {
+        isVeg = veg;
+    }
+
+    public void setBill(String bill) {
+        this.bill = bill;
+    }
+
+    public int getToppings() {
+        return toppings;
+    }
+
+    public void setToppings(int toppings) {
+        this.toppings = toppings;
+    }
+
+    public boolean isExtracheese() {
+        return isExtracheese;
+    }
+
+    public void setExtracheese(boolean extracheese) {
+        isExtracheese = extracheese;
+    }
+
+    public boolean isExtratopping() {
+        return isExtratopping;
+    }
+
+    public void setExtratopping(boolean extratopping) {
+        isExtratopping = extratopping;
+    }
+
+    public boolean isBill() {
+        return isBill;
+    }
+
+    public void setBill(boolean bill) {
+        isBill = bill;
+    }
+
+    public boolean isBag() {
+        return bag;
+    }
+
+    public void setBag(boolean bag) {
+        this.bag = bag;
+    }
+
     boolean isExtratopping;
     boolean isBill;
     boolean bag;
@@ -66,7 +123,7 @@ public class Pizza {
             if(bag){
                 this.bill +="Paperbag Added: 20"+"\n";
             }
-            this.bill += "Total Price: "+this.price;
+            this.bill += "Total Price: "+this.price+"\n";
             this.isBill = true;
             return this.bill;
         }
